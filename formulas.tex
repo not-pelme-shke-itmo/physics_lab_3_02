@@ -1,12 +1,12 @@
 \text{Закон Ома для замкнутой цепи}
 \[
-I = \frac{\mathcal{E}}{R + r}
+I = \frac{\mathscr{E}}{R + r}
 \]
 
 \text{Где:}
 \begin{center}
     $I - \text{сила тока}$ \\
-    $\mathcal{E} - \text{электродвижущая сила (ЭДС)}$ \\
+    $\mathscr{E} - \text{электродвижущая сила (ЭДС)}$ \\
     $r - \text{внутреннее сопротивление источника тока}$ \\
     $R - \text{сопротивление внешней цепи}$
 \end{center}
@@ -15,21 +15,21 @@ I = \frac{\mathcal{E}}{R + r}
 
 \text{Внутреннее сопротивление источника тока по МНК}
 \[
-r = \frac{\sum\limits_{i=1}^{n}(I_i - \overline{I})(U_i - \overline{U}))}{\sum\limits_{i=1}^{n}(I_i - \overline{I})^2}
+r = \frac{\sum\limits_{i=1}^{n}(I_i - \overline{I})(U_i - \overline{U})}{\sum\limits_{i=1}^{n}(I_i - \overline{I})^2}
 \]
 
 \vspace{0.1cm}
 
 \text{ЭДС на основе известного значения внутреннего сопротивления источника}
 \[
-\mathcal{E} = \overline{U} + \overline{I}|r|
+\mathscr{E} = \overline{U} + \overline{I}|r|
 \]
 
 \vspace{0.1cm}
 
 \text{Полная мощность, развиваемая источником}
 \[
-P = I\mathcal{E}
+P = I\mathscr{E}
 \]
 
 \text{Полезная мощность, развиваемая источником во внешней цепи}
@@ -51,7 +51,7 @@ P = P_{R} + P_{S}
 
 \text{Коэффициент полезного действия}
 \[
-\eta = \frac{P_{R}}{P} = \frac{U}{\mathcal{E}} = \frac{\mathcal{E} - Ir}{\mathcal{E}} = 1 - \frac{Ir}{\mathcal{E}}
+\eta = \frac{P_{R}}{P} = \frac{U}{\mathscr{E}} = \frac{\mathscr{E} - Ir}{\mathscr{E}} = 1 - \frac{Ir}{\mathscr{E}}
 \]
 
 \vspace{0.1cm}
@@ -86,10 +86,10 @@ P = P_{R} + P_{S}
 \text{Абсолютные погрешности для МНК значений внутреннего сопротивления и ЭДС}
 \begin{center}
     $\Delta r = 2 \cdot \sqrt{\frac{\sum\limits_{i=1}^N d_i^2}{D (n-2)}}$ \\
-    $\Delta \mathcal{E} = 2 \cdot \sqrt{\frac{\sum\limits_{i=1}^N d_i^2}{D (n-2)}\cdot \left(\frac{1}{n} + \frac{\overline{I}^2}{D}\right)}$
+    $\Delta \mathscr{E} = 2 \cdot \sqrt{\frac{\sum\limits_{i=1}^N d_i^2}{D (n-2)}\cdot \left(\frac{1}{n} + \frac{\overline{I}^2}{D}\right)}$
 \end{center}
 
 \text{Где:}
 \[
-d_i = U_i - (\mathcal{E} - I_i|r|) \quad \quad D = \sum\limits_{i=1}^N (I_i - \overline{I})^2
+d_i = U_i - (\mathscr{E} - I_i|r|) \quad \quad D = \sum\limits_{i=1}^N (I_i - \overline{I})^2
 \]
